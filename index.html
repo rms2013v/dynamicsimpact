@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamics Impact — D365 WMS Specialists</title>
+<meta name="description" content="Dynamics Impact is a specialist practice dedicated to Microsoft Dynamics 365 SCM Warehouse Management (D365 WMS): implementation, training, consulting and automation.">
+<link rel="canonical" href="https://dynamicsimpact.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dynamicsimpact.com/">
+<meta property="og:title" content="Dynamics Impact — D365 WMS Specialists">
+<meta property="og:description" content="D365 warehouse management made precise, made to scale. End-to-end D365 WMS implementation, training, and automation.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23fff'/%3E%3Crect x='3.5' y='3.5' width='9' height='9' fill='none' stroke='%23292929'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Dynamics Impact",
+  "url": "https://dynamicsimpact.com/",
+  "email": "info@dynamicsimpact.com",
+  "description": "Specialist practice dedicated to Microsoft Dynamics 365 SCM Warehouse Management (D365 WMS): implementation, training, consulting and automation.",
+  "knowsAbout": ["Microsoft Dynamics 365 Supply Chain Management", "Warehouse management systems", "X++ development", "Autonomous mobile robots", "Conveyor and sortation integration"],
+  "areaServed": "Worldwide"
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:#fff;color:#292929;font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+.site{background:#fff;max-width:1200px;margin:0 auto;border-left:1px solid #292929;border-right:1px solid #292929;min-height:100vh}
+nav{display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:52px;border-bottom:1px solid #292929;position:sticky;top:0;background:#fff;z-index:100}
+.wordmark{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:#292929;text-decoration:none}
+.nav-desktop{display:flex;align-items:center;gap:20px}
+.nav-link{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:#292929;text-decoration:none}
+.nav-link:hover{border-bottom:1px solid #292929}
+.nav-btn{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#292929;background:transparent;border:1px solid #292929;padding:8px 20px;cursor:pointer;transition:background 0.15s,color 0.15s;min-height:36px}
+.nav-btn:hover{background:#292929;color:#fff}
+.nav-mobile{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;margin:-8px;background:transparent;border:0}
+.nav-mobile span{display:block;width:22px;height:1px;background:#292929;transition:all 0.2s}
+.nav-mobile.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-mobile.open span:nth-child(2){opacity:0}
+.nav-mobile.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mobile-menu{display:none;flex-direction:column;border-bottom:1px solid #292929;background:#fff;position:sticky;top:52px;z-index:99}
+.mobile-menu.open{display:flex}
+.mobile-menu a,.mobile-menu button{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:#292929;text-decoration:none;padding:16px 20px;border-bottom:1px solid #292929;background:transparent;text-align:left;cursor:pointer;display:block;width:100%}
+.mobile-menu .menu-cta{font-weight:500;background:#292929;color:#fff}
+.hero{display:grid;grid-template-columns:280px 1fr 80px;border-bottom:1px solid #292929}
+.hero-left{padding:43px 20px 40px;border-right:1px solid #292929}
+.section-label{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#292929;display:block;margin-bottom:8px}
+.label-rule{border-bottom:1px solid #292929;margin-bottom:20px}
+.hero-body{font-size:16px;font-weight:400;line-height:1.5;color:#292929}
+.hero-body p+p{margin-top:16px}
+.clients-strip{margin-top:40px}
+.clients-label{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#292929;margin-bottom:8px}
+.clients-list{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:#292929;opacity:0.55;line-height:1.9;list-style:none}
+.hero-center{padding:43px 25px 40px;display:flex;flex-direction:column;justify-content:space-between}
+.hero-headline{font-size:43px;font-weight:300;line-height:1.18;letter-spacing:-0.86px;color:#292929}
+.hero-headline em{font-style:normal;font-weight:100}
+.hero-sub{font-size:22px;font-weight:300;line-height:1.34;letter-spacing:-0.4px;color:#292929;margin-top:25px}
+.hero-divider{border-top:1px solid #292929;margin-top:43px;padding-top:20px}
+.hero-right{border-left:1px solid #292929;display:flex;align-items:center;justify-content:center}
+.vert-text{writing-mode:vertical-rl;transform:rotate(180deg);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:#292929}
+.section-header{padding:16px 20px;display:flex;align-items:center;gap:20px;border-bottom:1px solid #292929;scroll-margin-top:52px}
+.section-header-label{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;white-space:nowrap;color:#292929}
+.section-header-rule{flex:1;border-top:1px solid #292929}
+.services{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #292929}
+.svc-card{padding:25px 20px 30px;border-right:1px solid #292929}
+.svc-card:last-child{border-right:none}
+.svc-num{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;color:#292929;opacity:0.35;margin-bottom:40px}
+.svc-title{font-size:28px;font-weight:300;line-height:1.2;letter-spacing:-0.5px;color:#292929;margin-bottom:16px}
+.svc-body{font-size:14px;font-weight:400;line-height:1.55;color:#292929}
+.svc-list{margin-top:20px;list-style:none}
+.svc-list li{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:#292929;padding:7px 0;border-top:1px solid #292929}
+.approach{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #292929}
+.approach-left{padding:43px 20px;border-right:1px solid #292929}
+.approach-right{padding:43px 20px;background:#292929}
+.approach-headline{font-size:36px;font-weight:100;line-height:1.2;letter-spacing:-0.7px;color:#292929}
+.approach-headline.inv{color:#fff}
+.approach-body{font-size:15px;font-weight:400;line-height:1.55;margin-top:20px;color:#292929}
+.approach-body.inv{color:#fff;opacity:0.8}
+.spec-list{margin-top:20px;list-style:none}
+.spec-list li{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;padding:8px 0;border-top:1px solid rgba(255,255,255,0.2);color:#fff}
+.spec-list.dark li{border-top:1px solid #292929;color:#292929}
+.contact-strip{padding:43px 20px;display:flex;align-items:flex-start;justify-content:space-between;gap:40px;border-bottom:1px solid #292929}
+.contact-left{max-width:420px}
+.contact-headline{font-size:36px;font-weight:300;line-height:1.2;letter-spacing:-0.7px;color:#292929}
+.contact-note{font-size:14px;line-height:1.55;color:#292929;margin-top:16px;opacity:0.65}
+.contact-email-block{flex-shrink:0;width:320px}
+.contact-email-link{display:block;font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:400;letter-spacing:0.05em;color:#292929;text-decoration:none;margin-top:16px;border-bottom:1px solid transparent;transition:border-color 0.15s}
+.contact-email-link:hover{border-bottom-color:#292929}
+.contact-reply{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:#292929;opacity:0.5;margin-top:12px}
+.contact-teams-btn{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#292929;text-decoration:none;border:1px solid #292929;padding:8px 20px;margin-top:16px;transition:background 0.15s,color 0.15s}
+.contact-teams-btn:hover{background:#292929;color:#fff}
+.contact-teams-btn:hover svg path,.contact-teams-btn:hover svg rect{stroke:#fff}
+footer{padding:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-link{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:#292929;text-decoration:none}
+.footer-link:hover{border-bottom:1px solid #292929}
+.footer-wordmark{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:#292929}
+.footer-mark{display:inline-block;width:7px;height:7px;border:1px solid #292929;margin-right:7px;vertical-align:middle}
+/* Accessibility: visible keyboard focus and a skip link (invisible unless tabbed to) */
+a:focus-visible,button:focus-visible{outline:1px solid #292929;outline-offset:3px}
+.approach-right a:focus-visible{outline-color:#fff}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:#292929;color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;padding:10px 20px;text-decoration:none}
+.skip-link:focus{left:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:900px){
+  .site{border-left:none;border-right:none}
+  .nav-desktop{display:none}
+  .nav-mobile{display:flex}
+  .hero{grid-template-columns:1fr}
+  .hero-left{border-right:none;border-bottom:1px solid #292929;padding:32px 20px}
+  .hero-center{padding:32px 20px}
+  .hero-right{display:none}
+  .hero-headline{font-size:36px}
+  .hero-sub{font-size:20px}
+  .services{grid-template-columns:1fr 1fr}
+  .svc-card:nth-child(2){border-right:none}
+  .svc-card:nth-child(3){border-top:1px solid #292929;border-right:1px solid #292929}
+  .svc-card:nth-child(4){border-top:1px solid #292929;border-right:none}
+  .approach{grid-template-columns:1fr}
+  .approach-left{border-right:none;border-bottom:1px solid #292929}
+  .contact-strip{flex-direction:column}
+  .contact-left{max-width:100%}
+  .contact-email-block{width:100%}
+}
+@media(max-width:560px){
+  .hero-headline{font-size:28px;letter-spacing:-0.4px}
+  .hero-sub{font-size:18px}
+  .services{grid-template-columns:1fr}
+  .svc-card{border-right:none;border-bottom:1px solid #292929}
+  .svc-card:last-child{border-bottom:none}
+  .svc-card:nth-child(3){border-top:none;border-right:none}
+  .svc-card:nth-child(4){border-top:none}
+  .svc-title{font-size:26px}
+  .approach-headline{font-size:28px}
+  .contact-headline{font-size:28px}
+  .contact-strip{padding:32px 20px}
+  footer{flex-direction:column;align-items:flex-start;gap:16px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site">
+
+  <nav aria-label="Main">
+    <a class="wordmark" href="#main">Dynamics Impact</a>
+    <div class="nav-desktop">
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#approach">About</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </div>
+    <button type="button" class="nav-mobile" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services">Services</a>
+    <a href="#approach">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-left">
+      <span class="section-label">About</span>
+      <div class="label-rule"></div>
+      <div class="hero-body">
+        <p>Dynamics Impact is a specialist practice dedicated entirely to Microsoft Dynamics 365 SCM Warehouse Management (D365 WMS).</p>
+        <p>We are a small team with deep expertise, not a general-purpose integrator. Every engagement is led by a practitioner who has run go-lives on the warehouse floor.</p>
+      </div>
+      <div class="clients-strip">
+        <h2 class="clients-label">Select Clients</h2>
+        <ul class="clients-list">
+          <li>BDO</li>
+          <li>Microsoft</li>
+          <li>Armanino</li>
+          <li>Argano</li>
+          <li>Reach International</li>
+          <li>Shipment Depot</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hero-center">
+      <div>
+        <h1 class="hero-headline" id="hero-title"><em>D365 warehouse management</em><br>made precise,<br>made to scale.</h1>
+        <p class="hero-sub">End-to-end D365 WMS implementation, training, and automation built for operations that cannot afford downtime.</p>
+      </div>
+      <div class="hero-divider"></div>
+    </div>
+    <div class="hero-right" aria-hidden="true">
+      <span class="vert-text">Implementation, Training, Consulting, Automation</span>
+    </div>
+  </section>
+
+  <div class="section-header" id="services">
+    <h2 class="section-header-label">Services</h2>
+    <div class="section-header-rule"></div>
+  </div>
+  <section class="services" aria-label="Services">
+    <article class="svc-card">
+      <div class="svc-num" aria-hidden="true">01</div>
+      <h3 class="svc-title">Implementation</h3>
+      <p class="svc-body">End-to-end, custom-built rollouts covering full D365 SCM WMS deployment, from process mapping to go-live.</p>
+      <ul class="svc-list">
+        <li>Solution design &amp; process mapping</li>
+        <li>Custom X++ development</li>
+        <li>Mobile device menu configuration</li>
+        <li>Staged rollout &amp; data migration</li>
+      </ul>
+    </article>
+    <article class="svc-card">
+      <div class="svc-num" aria-hidden="true">02</div>
+      <h3 class="svc-title">Training</h3>
+      <p class="svc-body">Hands-on instruction for warehouse staff, super users, and IT teams, delivered on-site or remotely.</p>
+      <ul class="svc-list">
+        <li>Warehouse floor staff training</li>
+        <li>Super user programs</li>
+        <li>IT &amp; system administration</li>
+        <li>Mobile device operation</li>
+      </ul>
+    </article>
+    <article class="svc-card">
+      <div class="svc-num" aria-hidden="true">03</div>
+      <h3 class="svc-title">Consulting &amp; Support</h3>
+      <p class="svc-body">Ongoing assistance for live environments: troubleshooting, process audits, performance tuning, and strategic planning.</p>
+      <ul class="svc-list">
+        <li>Implementation troubleshooting</li>
+        <li>Performance audits</li>
+        <li>Go-live support</li>
+        <li>Strategic planning</li>
+      </ul>
+    </article>
+    <article class="svc-card">
+      <div class="svc-num" aria-hidden="true">04</div>
+      <h3 class="svc-title">Automation</h3>
+      <p class="svc-body">Integration of autonomous robots, conveyor systems, sorters, and internet scales with D365 WMS.</p>
+      <ul class="svc-list">
+        <li>Robotics &amp; AMR integration</li>
+        <li>Conveyor &amp; sortation systems</li>
+        <li>Scales &amp; catch-weight automation</li>
+        <li>IoT device connectivity</li>
+      </ul>
+    </article>
+  </section>
+
+  <div class="section-header" id="approach">
+    <h2 class="section-header-label">Approach</h2>
+    <div class="section-header-rule"></div>
+  </div>
+  <section class="approach" aria-label="Approach">
+    <div class="approach-left">
+      <h3 class="approach-headline">Deep expertise,<br>not broad coverage.</h3>
+      <p class="approach-body">We do one thing: D365 WMS. That focus means every member of our team has run implementations, stood on warehouse floors during go-lives, and tuned systems under real operational pressure.</p>
+      <ul class="spec-list dark">
+        <li>Microsoft Dynamics 365 SCM WMS module</li>
+        <li>X++ custom development &amp; mobile flows</li>
+        <li>AMR &amp; conveyor system integration</li>
+        <li>Performance audits on live environments</li>
+        <li>Remote &amp; on-site delivery</li>
+      </ul>
+    </div>
+    <div class="approach-right">
+      <h3 class="approach-headline inv">We reply within<br>one business day.</h3>
+      <p class="approach-body inv">New project inquiries are reviewed directly by a specialist. No account managers, no intake forms that disappear. One contact, one answer.</p>
+      <ul class="spec-list">
+        <li>Direct specialist response</li>
+        <li>No-obligation scoping call</li>
+        <li>Fixed-scope or T&amp;M engagements</li>
+        <li>On-site or fully remote</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="section-header" id="contact">
+    <h2 class="section-header-label">Contact</h2>
+    <div class="section-header-rule"></div>
+  </div>
+  <section class="contact-strip" aria-label="Contact">
+    <div class="contact-left">
+      <h3 class="contact-headline">Start a conversation about your warehouse.</h3>
+      <p class="contact-note">Whether you're planning a new implementation, troubleshooting an existing system, or exploring automation, we'll tell you honestly what D365 WMS can and cannot do for your operation.</p>
+    </div>
+    <div class="contact-email-block">
+      <span class="section-label">Email us directly</span>
+      <div class="label-rule"></div>
+      <a class="contact-email-link" href="mailto:info@dynamicsimpact.com?subject=D365%20WMS%20project%20inquiry">info@dynamicsimpact.com</a>
+      <p class="contact-reply">We reply within one business day.</p>
+      <a class="contact-teams-btn" href="https://teams.microsoft.com/l/chat/0/0?users=okarnaukhov@dynamicsimpact.com&amp;topicName=Project%20Inquiry&amp;message=Hi%2C%20I%27d%20like%20to%20discuss%20a%20D365%20WMS%20project." target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="vertical-align:-2px;margin-right:8px"><path d="M10.5 5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" stroke="#292929" stroke-width="1"/><path d="M3 13c0-2.21 2.239-4 5-4s5 1.79 5 4" stroke="#292929" stroke-width="1" stroke-linecap="square"/><rect x="0.5" y="0.5" width="15" height="15" stroke="#292929" stroke-width="1"/></svg>
+        Chat on Teams<span class="sr-only"> (opens in a new tab)</span>
+      </a>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-links" role="navigation" aria-label="Footer">
+      <a class="footer-link" href="#services">Services</a>
+      <a class="footer-link" href="#approach">About</a>
+      <a class="footer-link" href="#contact">Contact</a>
+    </div>
+    <span class="footer-wordmark"><span class="footer-mark" aria-hidden="true"></span>Dynamics Impact</span>
+  </footer>
+
+</div>
+<script>
+(function(){
+  var btn=document.getElementById('hamburger'),menu=document.getElementById('mobileMenu');
+  function setOpen(open){
+    btn.classList.toggle('open',open);
+    menu.classList.toggle('open',open);
+    btn.setAttribute('aria-expanded',open);
+    btn.setAttribute('aria-label',open?'Close menu':'Open menu');
+  }
+  btn.addEventListener('click',function(){setOpen(!menu.classList.contains('open'))});
+  menu.addEventListener('click',function(e){if(e.target.closest('a'))setOpen(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&menu.classList.contains('open')){setOpen(false);btn.focus()}});
+})();
+</script>
+</body>
+</html>
