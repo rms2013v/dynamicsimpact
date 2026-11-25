@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dynamics Impact — D365 WMS Specialists</title>
-<meta name="description" content="Dynamics Impact is a specialist practice dedicated to Microsoft Dynamics 365 SCM Warehouse Management (D365 WMS): implementation, training, consulting and automation.">
+<meta name="description" content="Specialist Microsoft Dynamics 365 Warehouse Management (D365 WMS) consultancy: implementation, training, consulting and automation.">
 <link rel="canonical" href="https://dynamicsimpact.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dynamicsimpact.com/">
@@ -19,13 +19,60 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Dynamics Impact",
-  "url": "https://dynamicsimpact.com/",
-  "email": "info@dynamicsimpact.com",
-  "description": "Specialist practice dedicated to Microsoft Dynamics 365 SCM Warehouse Management (D365 WMS): implementation, training, consulting and automation.",
-  "knowsAbout": ["Microsoft Dynamics 365 Supply Chain Management", "Warehouse management systems", "X++ development", "Autonomous mobile robots", "Conveyor and sortation integration"],
-  "areaServed": "Worldwide"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dynamicsimpact.com/#organization",
+      "name": "Dynamics Impact",
+      "url": "https://dynamicsimpact.com/",
+      "email": "info@dynamicsimpact.com",
+      "description": "Specialist practice dedicated to Microsoft Dynamics 365 SCM Warehouse Management (D365 WMS): implementation, training, consulting and automation.",
+      "slogan": "D365 warehouse management made precise, made to scale.",
+      "knowsAbout": [
+        "Microsoft Dynamics 365 Supply Chain Management",
+        "Dynamics 365 Warehouse Management",
+        "Warehouse management systems",
+        "X++ development",
+        "Warehouse mobile device configuration",
+        "Autonomous mobile robots",
+        "Conveyor and sortation integration",
+        "Catch-weight automation"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "info@dynamicsimpact.com",
+        "availableLanguage": "en"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "D365 WMS services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "@id": "https://dynamicsimpact.com/#implementation", "name": "D365 WMS Implementation", "serviceType": "ERP implementation", "description": "End-to-end, custom-built rollouts covering full D365 SCM WMS deployment, from process mapping to go-live: solution design, custom X++ development, mobile device menu configuration, staged rollout and data migration.", "provider": {"@id": "https://dynamicsimpact.com/#organization"}, "areaServed": "Worldwide"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "@id": "https://dynamicsimpact.com/#training", "name": "D365 WMS Training", "serviceType": "Software training", "description": "Hands-on instruction for warehouse floor staff, super users and IT teams, delivered on-site or remotely.", "provider": {"@id": "https://dynamicsimpact.com/#organization"}, "areaServed": "Worldwide"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "@id": "https://dynamicsimpact.com/#consulting", "name": "D365 WMS Consulting & Support", "serviceType": "IT consulting", "description": "Ongoing assistance for live environments: implementation troubleshooting, performance audits, go-live support and strategic planning.", "provider": {"@id": "https://dynamicsimpact.com/#organization"}, "areaServed": "Worldwide"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "@id": "https://dynamicsimpact.com/#automation", "name": "Warehouse Automation Integration for D365 WMS", "serviceType": "Systems integration", "description": "Integration of autonomous robots (AMR), conveyor and sortation systems, scales and catch-weight automation, and IoT devices with D365 WMS.", "provider": {"@id": "https://dynamicsimpact.com/#organization"}, "areaServed": "Worldwide"}}
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dynamicsimpact.com/#website",
+      "url": "https://dynamicsimpact.com/",
+      "name": "Dynamics Impact",
+      "inLanguage": "en",
+      "publisher": {"@id": "https://dynamicsimpact.com/#organization"}
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dynamicsimpact.com/#webpage",
+      "url": "https://dynamicsimpact.com/",
+      "name": "Dynamics Impact — D365 WMS Specialists",
+      "isPartOf": {"@id": "https://dynamicsimpact.com/#website"},
+      "about": {"@id": "https://dynamicsimpact.com/#organization"},
+      "inLanguage": "en"
+    }
+  ]
 }
 </script>
 <style>
@@ -57,7 +104,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:0 20px
 .hero-body p+p{margin-top:16px}
 .clients-strip{margin-top:40px}
 .clients-label{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#292929;margin-bottom:8px}
-.clients-list{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:#292929;opacity:0.55;line-height:1.9;list-style:none}
+.clients-list{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:#292929;opacity:0.7;line-height:1.9;list-style:none}
 .hero-center{padding:43px 25px 40px;display:flex;flex-direction:column;justify-content:space-between}
 .hero-headline{font-size:43px;font-weight:300;line-height:1.18;letter-spacing:-0.86px;color:#292929}
 .hero-headline em{font-style:normal;font-weight:100}
@@ -93,7 +140,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:0 20px
 .contact-email-block{flex-shrink:0;width:320px}
 .contact-email-link{display:block;font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:400;letter-spacing:0.05em;color:#292929;text-decoration:none;margin-top:16px;border-bottom:1px solid transparent;transition:border-color 0.15s}
 .contact-email-link:hover{border-bottom-color:#292929}
-.contact-reply{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:#292929;opacity:0.5;margin-top:12px}
+.contact-reply{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:#292929;opacity:0.7;margin-top:12px}
 .contact-teams-btn{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#292929;text-decoration:none;border:1px solid #292929;padding:8px 20px;margin-top:16px;transition:background 0.15s,color 0.15s}
 .contact-teams-btn:hover{background:#292929;color:#fff}
 .contact-teams-btn:hover svg path,.contact-teams-btn:hover svg rect{stroke:#fff}
